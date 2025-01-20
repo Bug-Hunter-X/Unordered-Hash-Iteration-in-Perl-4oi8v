@@ -1,0 +1,1 @@
+use strict; use warnings; my %hash = (a => 1, b => 2, c => 3); # Solution 1: Sort keys before iteration foreach my $key (sort keys %hash) { print "$key\n"; } # Solution 2: Use a different data structure that maintains order, such as an array of key-value pairs. my @array = (['a', 1], ['b', 2], ['c', 3]); foreach my $pair (@array) { my ($key, $value) = @$pair; print "$key\n"; }
